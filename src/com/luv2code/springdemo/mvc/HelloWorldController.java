@@ -5,6 +5,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class HelloWorldController {
+	
+	@RequestMapping("/")
+	public String showPage() {
+		return "main-menu"; //  go config it in WEB-INF/prefix/main-menu.jsp
+	}
+	
 	// need a controller method to shoew the initial form
 	
 	@RequestMapping("/showForm")

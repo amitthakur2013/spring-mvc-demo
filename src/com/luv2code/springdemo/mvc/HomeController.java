@@ -6,8 +6,5 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class HomeController {
 	
-	@RequestMapping("/")
-	public String showPage() {
-		return "main-menu"; //  go config it in WEB-INF/prefix/main-menu.jsp
-	}
+	
 }
