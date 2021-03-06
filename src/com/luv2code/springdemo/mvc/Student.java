@@ -1,4 +1,5 @@
 package com.luv2code.springdemo.mvc;
+import java.util.*;
 
 public class Student {
 	
@@ -6,6 +7,20 @@ public class Student {
 	private String lastName;
 	private String country;
 	
+	private LinkedHashMap<String,String> countryOptions;
+	
+	public Student() {
+		//populate country options: used ISO country code
+		countryOptions = new LinkedHashMap<>();
+		
+		countryOptions.put("BR","Brazil");
+		countryOptions.put("FR","France");
+		countryOptions.put("IN","India");
+		countryOptions.put("DE","Germany");
+	}
+	public LinkedHashMap<String, String> getCountryOptions() {
+		return countryOptions;
+	}
 	public String getFirstName() {
 		return firstName;
 	}
@@ -31,7 +46,5 @@ public class Student {
 		this.country = country;
 	}
 
-	public Student() {
-		
-	}
+	
 }
