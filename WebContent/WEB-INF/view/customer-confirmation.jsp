@@ -15,6 +15,8 @@
 The customer is confirmed: ${customer.firstName} ${customer.lastName}
 <br/>
 The customer has ${customer.freePasses} passes
+<br/>
+The postal code is: ${customer.postalCode}
 
 </body>
 
