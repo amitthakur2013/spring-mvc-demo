@@ -7,6 +7,7 @@
 	<title>
 		Customer Registration Form
 	</title>
+	<style>.error{color:red}</style>
 </head>
 
 <body>
@@ -16,7 +17,7 @@
 		<br/><br/>
 		
 		Last name: (*)<form:input path="lastName" />
-		<form:errors path="lastName" />
+		<form:errors path="lastName" cssClass="error"/>
 		<br/><br/>
 		
 		<input type="submit" value="Submit" />
